@@ -32,7 +32,7 @@ public class Login extends HttpServlet {
 			} else {
 				request.setAttribute("error", "IDまたはパスワードが間違っています");
 				request.setAttribute("login", login);
-				request.getRequestDispatcher("/jsp/login1.jsp").forward(request, response);
+				request.getRequestDispatcher("../jsp/login1.jsp").forward(request, response);
 
 			}
 		} catch (Exception e) {
